@@ -119,12 +119,20 @@ p{
 .small-container .container{
     margin-top:2%;
 }
+
+.featured-product_p {
+    text-decoration: line-through;
+}
 .col-3{
     flex-basis: 25%;
     padding:10px;
     min-width: 200px;
     margin-bottom: 50px;
     transition: transform 0.5s;
+}
+
+.col-3:hover{
+    transform: translateY(-10px);
 }
 .col-3 img{
     width:100%;
@@ -164,9 +172,6 @@ h4{
     color: #ff523b;
 }
 
-.col-3:hover{
-    transform: translateY(-10px);
-}
 
 .offer{
     animation-name: example;
@@ -250,6 +255,7 @@ small{
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
+
 }
 .footer p{
     color: #8a8a8a;
@@ -259,7 +265,60 @@ small{
     margin-bottom: 20px;
     
 }
+.footer ul{
+    list-style-type: none;
+}
+.footer_ul {
+   
+        list-style-type: none;
+        position: relative;
+        display: inline-block;
+        transition: transform 0.5s;
+    
+}
+.footer img{
+    width: 20px;
+    
+}
+.footer_ul li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 55px;
+    margin-left: 0;
+    cursor: pointer;
+    border-radius: 0px;
+    
+}
 
+.footer_ul li:hover {
+    transform: translateY(-10px);
+
+}
+.footer .col-12{
+   
+}
+
+
+/* .footer_ul:hover li  {
+    opacity: 1
+}
+
+.footer_ul li:nth-child(1) {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px
+}
+
+.footer_ul li:nth-child(5) {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px
+}
+
+.footer_ul:hover li {
+    border-radius: 50px;
+    margin: 0 3px
+} */
 
 /* Countdown */
 
