@@ -1,3 +1,25 @@
+var SingleProductImage = document.getElementById("SingleProductImage");
+var SingleProductImg = document.getElementsByClassName("SingleProduct_Img");
+    
+    SingleProductImg[0].onclick = function(){
+        SingleProductImage.src = SingleProductImg[0].src;
+    }
+     
+    SingleProductImg[1].onclick = function(){
+        SingleProductImage.src = SingleProductImg[1].src;
+    }
+     
+    SingleProductImg[2].onclick = function(){
+        SingleProductImage.src = SingleProductImg[2].src;
+    }
+     
+    SingleProductImg[3].onclick = function(){
+        SingleProductImage.src = SingleProductImg[3].src;
+    }
+    
+
+
+
 function countdown(){
     let now = new Date();
     let eventDate = new Date(2020, 12, 25);
@@ -36,7 +58,7 @@ function countdown(){
     hour.innerText = h;
     day.innerText = d;
 
-    // loader style
+    
     secondLoader.style.strokeDashoffset = Math.floor((250 - (250 * s) / 60));
     minuteLoader.style.strokeDashoffset = Math.floor((250 - (250 * m) / 60));
     hourLoader.style.strokeDashoffset = Math.floor((250 - (250 * h) / 24));
@@ -46,3 +68,8 @@ function countdown(){
 }
 
 countdown();
+
+
+
+
+ 
