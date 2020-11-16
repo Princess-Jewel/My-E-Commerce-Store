@@ -1,23 +1,3 @@
-var SingleProductImage = document.getElementById("SingleProductImage");
-var SingleProductImg = document.getElementsByClassName("SingleProduct_Img");
-    
-    SingleProductImg[0].onclick = function(){
-        SingleProductImage.src = SingleProductImg[0].src;
-    }
-     
-    SingleProductImg[1].onclick = function(){
-        SingleProductImage.src = SingleProductImg[1].src;
-    }
-     
-    SingleProductImg[2].onclick = function(){
-        SingleProductImage.src = SingleProductImg[2].src;
-    }
-     
-    SingleProductImg[3].onclick = function(){
-        SingleProductImage.src = SingleProductImg[3].src;
-    }
-    
-
 
 
 function countdown(){

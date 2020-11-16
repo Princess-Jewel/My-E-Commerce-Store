@@ -11,7 +11,8 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Account Page | ThatEbonyChic Store</title>
+    <script src="cart.js" async></script>
+    <title>Cart Page | ThatEbonyChic Store</title>
 </head>
 
 <body>
@@ -46,40 +47,94 @@
         </nav>
     </div>
 
-    <div class="account-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <img src="images/image1.png" alt="accountimage">
-                </div>
-                <div class="col-6">
-                    <div class="form-container">
-                        <div class="form-btn">
-                            <span onclick="signin()">Sign-in</span>
-                            <span onclick="signup()">Sign-Up</span>
-                            <hr id="Indicator">
-                        </div>
-                        <form id="SignInForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">     
-                            <button type="submit" class="btn">Sign-In</button>
-                            <a href="">Forgot password</a>
-                        </form>
 
-                        <form id="SignUpForm">
-                            <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">     
-                            <button type="submit" class="btn">Sign-Up</button>
+
+    <div class="small-container">
+        <div class="cart-table-container">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr class="cart-table">
+
+                <td>
+
+                    <div class="cart-info">
+                        <img src="images/image4.jpg" alt="cartimage">
+                        <div>
+                            <p>Male Jogging Sneakers</p>
                             
-                        </form>
+                            <br>
+                            <button class="remove-button">Remove</button>
 
-
+                        </div>
                     </div>
-                </div>
-            </div>
+
+                </td>
+                <td><input class="cart-quantity-input"  type="number" value="1"></td>
+                <td> <span class="cart-price">$50.00</span></td>
+
+            </tr>
+            <tr class="cart-table">
+
+                <td>
+
+                    <div class="cart-info">
+                        <img src="images/image2.jpg" alt="cartimage">
+                        <div>
+                            <p>Male Jogging Sneakers</p>
+                           
+                            <br>
+                            
+                            <button class="remove-button">Remove</button>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input class="cart-quantity-input"  type="number" value="1"></td>
+                <td> <span class="cart-price">$140.00</span></td>
+
+            </tr>
+            <tr class="cart-table">
+
+                <td>
+                    <div class="cart-info">
+                        <img src="images/image7.jpg" alt="cartimage">
+                        <div>
+                            <p>Male Jogging Sneakers</p>
+                           
+                            <br>
+                            <button class="remove-button">Remove</button>
+
+                        </div>
+                    </div>
+                </td>
+                <td><input class="cart-quantity-input" type="number" value="1"></td>
+                <td> <span class="cart-price">$60.00</span></td>
+
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                
+                <tr>
+                    <td>Total</td>
+                    <td class="cart-total-price">$240.00</td>
+                </tr>
+            </table>
         </div>
+
+
+
     </div>
+    </div>
+
+
+
+
 
 
     <div class="footer">
@@ -145,27 +200,17 @@
         </div>
     </div>
 
-    <script>
-        
-    var SignInForm = document.getElementById("SignInForm");
-    var SignUpForm = document.getElementById("SignUpForm");
-    var Indicator = document.getElementById("Indicator");
+    <script src="script.js"></script>
 
-        function signup(){
-
-            SignUpForm.style.transform = "translateX(0px)";
-            SignInForm.style.transform = "translateX(0px)";
-            Indicator.style.transform = "translateX(100px)";
-        }
-
-        function signin(){
-
-            SignUpForm.style.transform = "translateX(300px)";
-            SignInForm.style.transform = "translateX(300px)";
-            Indicator.style.transform = "translateX(0px)";
-        }
-    </script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 
 
 

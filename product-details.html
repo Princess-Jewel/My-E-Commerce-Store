@@ -11,7 +11,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Products Page | ThatEbonyChic Store</title>
+    <title>Single-Product Page | ThatEbonyChic Store</title>
 </head>
 
 <body>
@@ -35,12 +35,12 @@
                         <a class="nav-item nav-link" href="products.html">Products</a>
                         <a class="nav-item nav-link" href="#">About</a>
                         <a class="nav-item nav-link" href="#">Contact</a>
-                        <a class="nav-item nav-link" href="#">Accounts</a>
+                        <a class="nav-item nav-link" href="account.html">Account</a>
                         <!-- <a class="nav-item_cart nav-link" href="#"><img src="images/cart.png" alt="image" /></a> -->
                     </div>
                 </div>
 
-                <img src="images/cart.png" alt="cart image">
+                <a href="cart.html"><img src="images/cart.png" alt="cart image"></a>
                 <img src="images/menu.png" alt="menu icon" class="menu-icon">
 
             </nav>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="col-6">
                         <p>Home/ Sneakers</p>
-                        <h1>Colourful Sporty Sneakers by ThatEbonyChic</h1>
+                        <h1 class="shop-item-title">Colourful Sporty Sneakers by ThatEbonyChic</h1>
                         <h4>$40.00</h4>
                         <select>
                             <option>Select Size</option>
@@ -84,7 +84,7 @@
                             <option>S</option>
                         </select> <br>
                         <input type="number" value="1"> <br>
-                        <a href="" class="btn">Add To Cart</a>
+                        <button class="btn">Add To Cart</button>
                         <h3>Product Details <i class="fas fa-indent"></i></h3>
                         <br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -231,17 +231,28 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        var SingleProductImage = document.getElementById("SingleProductImage");
+var SingleProductImg = document.getElementsByClassName("SingleProduct_Img");
+    
+    SingleProductImg[0].onclick = function(){
+        SingleProductImage.src = SingleProductImg[0].src;
+    }
+     
+    SingleProductImg[1].onclick = function(){
+        SingleProductImage.src = SingleProductImg[1].src;
+    }
+     
+    SingleProductImg[2].onclick = function(){
+        SingleProductImage.src = SingleProductImg[2].src;
+    }
+     
+    SingleProductImg[3].onclick = function(){
+        SingleProductImage.src = SingleProductImg[3].src;
+    }
+    
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    </script>
     
 
 
